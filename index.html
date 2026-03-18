@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cupom DRMATHEUS10 — Estratégia MED | Dr. Matheus</title>
+<meta name="description" content="Use o cupom DRMATHEUS10 do Dr. Matheus e garanta desconto nos cursos do Estratégia MED — Residência Médica, Revalida INEP e BQMED.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ─── CONFIG ─── */
+  :root {
+    --navy: #0b1425;
+    --navy-2: #111e35;
+    --navy-3: #16284a;
+    --emerald: #2a6fc9;
+    --emerald-dim: #1f58a8;
+    --emerald-glow: rgba(42,111,201,0.12);
+    --white: #f0f4f8;
+    --muted: #8a9ab8;
+    --border: rgba(255,255,255,0.07);
+    --card-bg: rgba(255,255,255,0.03);
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+    --radius: 12px;
+    --radius-lg: 20px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--navy);
+    color: var(--white);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ─── NOISE TEXTURE OVERLAY ─── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(11,20,37,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 1.5rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .nav-logo {
+    width: 34px;
+    height: 34px;
+    background: var(--emerald);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-size: 16px;
+    color: var(--navy);
+    font-weight: 700;
+  }
+
+  .nav-brand span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+    letter-spacing: 0.01em;
+  }
+
+  .nav-cta {
+    background: var(--emerald);
+    color: var(--navy);
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    transition: background 0.2s;
+  }
+
+  .nav-cta:hover { background: var(--emerald-dim); }
+
+  /* ─── HERO ─── */
+  .hero {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 80px 1.5rem 60px;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--emerald-glow);
+    border: 1px solid rgba(5,192,127,0.25);
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--emerald);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .hero-badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--emerald);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--emerald);
+  }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 540px;
+    margin: 0 auto 48px;
+    line-height: 1.7;
+  }
+
+  /* ─── CUPOM BOX ─── */
+  .cupom-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 56px;
+  }
+
+  .cupom-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .cupom-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border: 1.5px dashed rgba(5,192,127,0.4);
+    border-radius: var(--radius);
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .cupom-box:hover {
+    border-color: var(--emerald);
+    box-shadow: 0 0 32px var(--emerald-glow);
+  }
+
+  .cupom-code {
+    background: rgba(5,192,127,0.06);
+    padding: 18px 28px;
+    font-family: 'DM Serif Display', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--emerald);
+    user-select: none;
+  }
+
+  .cupom-btn {
+    background: var(--emerald);
+    color: var(--navy);
+    border: none;
+    padding: 18px 24px;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  .cupom-btn:hover { background: var(--emerald-dim); }
+
+  .cupom-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+  .cupom-hint {
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .copied-toast {
+    display: none;
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--emerald);
+    color: var(--navy);
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 999;
+    animation: fadeUp 0.3s ease;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+
+  /* ─── DISCOUNT BADGE ─── */
+  .discount-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .discount-pill {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 24px;
+    text-align: center;
+  }
+
+  .discount-pill .num {
+    font-family: var(--serif);
+    font-size: 2rem;
+    color: var(--emerald);
+    display: block;
+    line-height: 1;
+  }
+
+  .discount-pill .desc {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* ─── SECTION COMMONS ─── */
+  section {
+    position: relative;
+    z-index: 1;
+    padding: 72px 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--emerald);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(1.7rem, 4vw, 2.6rem);
+    line-height: 1.15;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+
+  .section-sub {
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 540px;
+    line-height: 1.7;
+    margin-bottom: 48px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0;
+  }
+
+  /* ─── HOW TO USE ─── */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+
+  .step-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+
+  .step-card:hover { border-color: rgba(42,111,201,0.2); }
+
+  .step-num {
+    font-family: var(--serif);
+    font-size: 3.5rem;
+    color: rgba(42,111,201,0.12);
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    line-height: 1;
+    font-style: italic;
+  }
+
+  .step-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--emerald-glow);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: var(--emerald);
+    font-size: 18px;
+  }
+
+  .step-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--white);
+  }
+
+  .step-card p {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* ─── BLOG RESUMO ─── */
+  .blog-section {
+    background: var(--navy-2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 72px 1.5rem;
+  }
+
+  .blog-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .blog-controls {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .blog-filter {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .blog-filter:hover,
+  .blog-filter.active {
+    border-color: var(--emerald);
+    color: var(--emerald);
+    background: var(--emerald-glow);
+  }
+
+  .blog-fetch-btn {
+    background: var(--emerald);
+    color: var(--navy);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+    margin-left: auto;
+  }
+
+  .blog-fetch-btn:hover:not(:disabled) { background: var(--emerald-dim); }
+  .blog-fetch-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .blog-fetch-btn .spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(11,20,37,0.3);
+    border-top-color: var(--navy);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    display: none;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .blog-card {
+    background: var(--navy);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: border-color 0.2s, transform 0.2s;
+    animation: fadeIn 0.4s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .blog-card:hover {
+    border-color: rgba(5,192,127,0.2);
+    transform: translateY(-2px);
+  }
+
+  .blog-card-tag {
+    display: inline-block;
+    background: var(--emerald-glow);
+    color: var(--emerald);
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    align-self: flex-start;
+  }
+
+  .blog-card h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.4;
+  }
+
+  .blog-card p {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .blog-card-link {
+    font-size: 13px;
+    color: var(--emerald);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: gap 0.15s;
+  }
+
+  .blog-card-link:hover { gap: 8px; }
+
+  /* ─── CTA BANNER ─── */
+  .cta-banner {
+    background: linear-gradient(135deg, var(--navy-3) 0%, rgba(5,192,127,0.08) 100%);
+    border: 1px solid rgba(5,192,127,0.15);
+    border-radius: var(--radius-lg);
+    padding: 48px 40px;
+    text-align: center;
+  }
+
+  .cta-banner h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    margin-bottom: 12px;
+  }
+
+  .cta-banner p {
+    color: var(--muted);
+    margin-bottom: 32px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-banner-inline-code {
+    background: var(--emerald-glow);
+    border: 1px solid rgba(5,192,127,0.25);
+    border-radius: 8px;
+    padding: 3px 10px;
+    color: var(--emerald);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .cta-btn-group {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--emerald);
+    color: var(--navy);
+    padding: 14px 32px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover { background: var(--emerald-dim); transform: translateY(-1px); }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--white);
+    padding: 14px 32px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid var(--border);
+    transition: border-color 0.2s;
+    display: inline-block;
+  }
+
+  .btn-secondary:hover { border-color: rgba(255,255,255,0.2); }
+
+  /* ─── FAQ ─── */
+  .faq-list { display: flex; flex-direction: column; gap: 8px; }
+
+  .faq-item {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .faq-q {
+    width: 100%;
+    background: var(--card-bg);
+    border: none;
+    color: var(--white);
+    text-align: left;
+    padding: 18px 20px;
+    font-family: var(--sans);
+    font-size: 14.5px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    transition: background 0.15s;
+  }
+
+  .faq-q:hover { background: rgba(255,255,255,0.04); }
+
+  .faq-q .arrow {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--muted);
+    transition: transform 0.25s;
+  }
+
+  .faq-item.open .faq-q .arrow { transform: rotate(180deg); }
+
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+    padding: 0 20px;
+  }
+
+  .faq-item.open .faq-a {
+    max-height: 300px;
+    padding: 0 20px 18px;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid var(--border);
+    padding: 40px 1.5rem;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  footer a { color: var(--emerald); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 600px) {
+    .hero { padding: 56px 1rem 40px; }
+    .cupom-code { font-size: 1.5rem; padding: 16px 18px; }
+    .cupom-btn { padding: 16px 16px; font-size: 12px; }
+    section { padding: 56px 1rem; }
+    .cta-banner { padding: 36px 20px; }
+    .blog-section { padding: 56px 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <a class="nav-brand" href="#">
+    <div class="nav-logo">M</div>
+    <span>Dr. Matheus · Estratégia MED</span>
+  </a>
+  <a class="nav-cta" href="https://med.estrategia.com" target="_blank" rel="noopener">
+    Ver cursos →
+  </a>
+</nav>
+
+<!-- ─── HERO ─── -->
+<div class="hero">
+  <div class="hero-badge">Embaixador Oficial</div>
+
+  <h1>Cupom Estratégia MED<br><em>exclusivo do Dr. Matheus</em></h1>
+
+  <p class="hero-sub">
+    Use meu cupom abaixo e economize nos cursos de Residência Médica, Revalida INEP e BQMED do Estratégia MED.
+  </p>
+
+  <!-- CUPOM -->
+  <div class="cupom-wrapper">
+    <span class="cupom-label">Seu cupom de desconto</span>
+    <div class="cupom-box" onclick="copyCupom()">
+      <div class="cupom-code">DRMATHEUS10</div>
+      <button class="cupom-btn" id="copy-btn">
+        <svg id="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+        </svg>
+        <svg id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+        <span id="btn-label">Copiar cupom</span>
+      </button>
+    </div>
+    <span class="cupom-hint">👆 Clique para copiar automaticamente</span>
+  </div>
+
+  <!-- STATS -->
+  <div class="discount-strip">
+    <div class="discount-pill">
+      <span class="num">10%</span>
+      <span class="desc">de desconto</span>
+    </div>
+    <div class="discount-pill">
+      <span class="num">+214 mil</span>
+      <span class="desc">questões no BQMED</span>
+    </div>
+    <div class="discount-pill">
+      <span class="num">Revalida</span>
+      <span class="desc">+ Residência + BQMED</span>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ─── COMO USAR ─── -->
+<section>
+  <div class="section-label">Passo a passo</div>
+  <h2 class="section-title">Como usar o cupom</h2>
+  <p class="section-sub">Em menos de 1 minuto você aplica o desconto e garante o seu acesso.</p>
+
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-icon">📋</div>
+      <h3>Copie o cupom</h3>
+      <p>Clique no código DRMATHEUS10 acima para copiar automaticamente.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-icon">🦉</div>
+      <h3>Acesse o Estratégia MED</h3>
+      <p>Entre em <strong style="color:var(--white)">med.estrategia.com</strong> e escolha o curso desejado.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-icon">🎯</div>
+      <h3>Aplique no carrinho</h3>
+      <p>Cole o cupom no campo de desconto e finalize com 10% off.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ─── BLOG / NOTÍCIAS ─── -->
+<div class="blog-section">
+  <div class="blog-inner">
+    <div class="section-label">Conteúdo selecionado</div>
+    <h2 class="section-title">Blog Estratégia MED</h2>
+    <p class="section-sub" style="margin-bottom:32px">
+      Artigos e notícias sobre Residência Médica, Revalida INEP e carreira médica direto do portal Estratégia MED.
+    </p>
+
+    <div class="blog-controls">
+      <button class="blog-filter active" data-cat="todos">Todos</button>
+      <button class="blog-filter" data-cat="residencia">Residência Médica</button>
+      <button class="blog-filter" data-cat="revalida">Revalida</button>
+      <button class="blog-filter" data-cat="carreira">Carreira</button>
+    </div>
+
+    <!-- BLOG_START -->
+    <div class="blog-grid" id="blog-output">
+      <div class="blog-card">
+        <span class="blog-card-tag" data-cat="residencia">Residência Médica</span>
+        <h4>Como se preparar para a prova de Residência Médica em 2025</h4>
+        <p>Guia completo com cronograma, estratégias de estudo e os principais tópicos cobrados nas provas de Residência Médica no Brasil.</p>
+        <a class="blog-card-link" href="https://med.estrategia.com/portal" target="_blank" rel="noopener">Ler no portal →</a>
+      </div>
+      <div class="blog-card">
+        <span class="blog-card-tag" data-cat="revalida">Revalida</span>
+        <h4>Revalida INEP 2025: datas, inscrições e o que esperar</h4>
+        <p>Tudo sobre o cronograma oficial do Revalida INEP, etapas da prova, documentação necessária e dicas de preparação.</p>
+        <a class="blog-card-link" href="https://med.estrategia.com/portal" target="_blank" rel="noopener">Ler no portal →</a>
+      </div>
+      <div class="blog-card">
+        <span class="blog-card-tag" data-cat="carreira">Carreira</span>
+        <h4>Especialidades médicas mais disputadas: o que os dados dizem</h4>
+        <p>Análise das especialidades com maior concorrência nas provas de residência e como isso deve influenciar sua escolha de carreira.</p>
+        <a class="blog-card-link" href="https://med.estrategia.com/portal" target="_blank" rel="noopener">Ler no portal →</a>
+      </div>
+      <div class="blog-card">
+        <span class="blog-card-tag" data-cat="residencia">Residência Médica</span>
+        <h4>BQMED: como usar o banco de questões para maximizar seu desempenho</h4>
+        <p>Estratégias práticas para aproveitar ao máximo as +214 mil questões comentadas do BQMED na sua preparação.</p>
+        <a class="blog-card-link" href="https://med.estrategia.com/portal" target="_blank" rel="noopener">Ler no portal →</a>
+      </div>
+      <div class="blog-card">
+        <span class="blog-card-tag" data-cat="revalida">Revalida</span>
+        <h4>Diferenças entre Revalida INEP e ENARE: qual fazer?</h4>
+        <p>Comparativo detalhado entre as duas principais vias de revalidação de diploma médico no Brasil, com prós e contras de cada uma.</p>
+        <a class="blog-card-link" href="https://med.estrategia.com/portal" target="_blank" rel="noopener">Ler no portal →</a>
+      </div>
+      <div class="blog-card">
+        <span class="blog-card-tag" data-cat="carreira">Carreira</span>
+        <h4>Medicina de família e comunidade: a especialidade em ascensão</h4>
+        <p>Por que MFC está crescendo em relevância, quais são as oportunidades de mercado e como se destacar nessa área.</p>
+        <a class="blog-card-link" href="https://med.estrategia.com/portal" target="_blank" rel="noopener">Ler no portal →</a>
+      </div>
+    </div>
+    <!-- BLOG_END -->
+
+    <div style="text-align:center; margin-top:32px">
+      <a href="https://med.estrategia.com/portal" target="_blank" rel="noopener" class="btn-secondary" style="display:inline-block">
+        Ver todos os artigos →
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ─── CTA BANNER ─── -->
+<section>
+  <div class="cta-banner">
+    <h2>Pronto para sua aprovação?</h2>
+    <p>
+      Acesse os cursos do Estratégia MED com o cupom
+      <span class="cta-banner-inline-code">DRMATHEUS10</span>
+      e comece sua preparação hoje.
+    </p>
+    <div class="cta-btn-group">
+      <a href="https://med.estrategia.com" target="_blank" rel="noopener" class="btn-primary">
+        Acessar Estratégia MED
+      </a>
+      <button onclick="copyCupom()" class="btn-secondary" style="cursor:pointer">
+        Copiar cupom
+      </button>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ─── FAQ ─── -->
+<section>
+  <div class="section-label">Dúvidas frequentes</div>
+  <h2 class="section-title">Perguntas frequentes</h2>
+  <p class="section-sub">Tudo o que você precisa saber sobre o cupom e os cursos.</p>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        O cupom DRMATHEUS10 dá quanto de desconto?
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-a">O cupom DRMATHEUS10 oferece 10% de desconto nos cursos do Estratégia MED, incluindo planos de Residência Médica, Revalida INEP e o Banco de Questões MED (BQMED).</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        O cupom é válido para todos os cursos do Estratégia MED?
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-a">Sim, o cupom pode ser aplicado nos principais produtos do Estratégia MED: Extensivo Residência Médica, Revalida Exclusive, Intensivo Residência Médica, Reta Final Revalida INEP e BQMED. Confirme sempre no carrinho antes de finalizar.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        O cupom funciona em planos de 12 e 24 meses?
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-a">Geralmente sim. O cupom DRMATHEUS10 é válido independentemente do período escolhido, mas recomendo verificar no checkout para ter certeza, pois o Estratégia MED pode ter condições específicas para determinadas campanhas.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Este site é o site oficial do Estratégia MED?
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-a">Não. Este site é mantido pelo Dr. Matheus, embaixador oficial do programa de afiliados do Estratégia Educacional. O site oficial é <strong style="color:var(--white)">med.estrategia.com</strong>.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Qual o melhor curso para começar a preparação para Residência?
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-a">Para quem está começando, o Extensivo Residência Médica é o caminho mais completo — cobre toda a base clínica com videoaulas, simulados e o BQMED com +214 mil questões comentadas. Para quem já estuda e quer intensificar, o Intensivo é excelente opção.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <p><strong style="color:var(--white)">Dr. Matheus</strong> — Embaixador Oficial Estratégia MED</p>
+  <p style="margin-top:6px">
+    Cupom de desconto exclusivo compartilhado como parte do programa de indicação.<br>
+    Este site é independente e <strong>não é</strong> o site oficial do Estratégia Educacional.
+  </p>
+  <p style="margin-top:12px">
+    <a href="https://med.estrategia.com" target="_blank" rel="noopener">Estratégia MED</a> ·
+    <a href="https://med.estrategia.com/portal" target="_blank" rel="noopener">Blog</a>
+  </p>
+  <p style="margin-top:16px;font-size:11px;opacity:0.5">© 2026 Dr. Matheus · Cupom DRMATHEUS10</p>
+</footer>
+
+<!-- ─── TOAST ─── -->
+<div class="copied-toast" id="toast">✓ Cupom copiado!</div>
+
+<script>
+/* ─── CUPOM COPY ─── */
+function copyCupom() {
+  navigator.clipboard.writeText('DRMATHEUS10').then(() => {
+    const toast = document.getElementById('toast');
+    const btn = document.getElementById('copy-btn');
+    const label = document.getElementById('btn-label');
+    const iconCopy = document.getElementById('icon-copy');
+    const iconCheck = document.getElementById('icon-check');
+
+    iconCopy.style.display = 'none';
+    iconCheck.style.display = 'block';
+    label.textContent = 'Copiado!';
+    btn.style.background = '#1f58a8';
+
+    toast.style.display = 'block';
+    setTimeout(() => {
+      toast.style.display = 'none';
+      iconCopy.style.display = 'block';
+      iconCheck.style.display = 'none';
+      label.textContent = 'Copiar cupom';
+      btn.style.background = '';
+    }, 2500);
+  });
+}
+
+/* ─── FAQ TOGGLE ─── */
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+/* ─── BLOG FILTERS ─── */
+let currentCategory = 'todos';
+document.querySelectorAll('.blog-filter').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.blog-filter').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentCategory = btn.dataset.cat;
+    filterCards();
+  });
+});
+
+function filterCards() {
+  document.querySelectorAll('.blog-card').forEach(card => {
+    if (currentCategory === 'todos') {
+      card.style.display = '';
+    } else {
+      const tag = card.querySelector('.blog-card-tag');
+      if (tag && tag.dataset.cat === currentCategory) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    }
+  });
+}
+
+/* filter only */
+</script>
+</body>
+</html>
