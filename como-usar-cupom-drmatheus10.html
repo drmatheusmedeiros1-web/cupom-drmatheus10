@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Como usar o cupom DRMATHEUS10 — Estratégia MED</title>
+<meta name="description" content="Passo a passo simples para usar o cupom DRMATHEUS10 e garantir 10% de desconto nos cursos do Estratégia MED.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #0b1425;
+  --navy-panel: #101b30;
+  --navy-panel-2: #131f38;
+  --blue: #2a6fc9;
+  --blue-soft: rgba(42,111,201,0.15);
+  --white: #f0f4f8;
+  --gray: #8a9ab8;
+  --border: rgba(240,244,248,0.09);
+  --green: #22c55e;
+}
+html { scroll-behavior: smooth; }
+body {
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+em { font-style: italic; color: var(--blue); }
+a { color: inherit; }
+
+/* ---------- header ---------- */
+.header {
+  padding: 28px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.brand { font-family: 'DM Serif Display', serif; font-size: 1.15rem; letter-spacing: 0.01em; }
+.brand span { color: var(--blue); }
+.header-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ---------- hero ---------- */
+.hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 32px 56px;
+  text-align: center;
+}
+.eyebrow {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 18px;
+}
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.hero-sub {
+  font-size: 16px;
+  color: var(--gray);
+  max-width: 480px;
+  margin: 0 auto 44px;
+}
+
+/* ---------- coupon ticket (signature element) ---------- */
+.ticket {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  max-width: 460px;
+  margin: 0 auto 32px;
+  background: linear-gradient(155deg, var(--navy-panel-2), var(--navy-panel));
+  border: 1px solid rgba(42,111,201,0.35);
+  border-radius: 18px;
+  overflow: visible;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+.ticket-main {
+  flex: 1;
+  padding: 26px 24px;
+  text-align: left;
+}
+.ticket-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+.ticket-code-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.ticket-code {
+  font-family: 'DM Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--white);
+}
+.copy-btn-lg {
+  background: var(--blue-soft);
+  border: 1px solid rgba(42,111,201,0.4);
+  color: var(--blue);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.copy-btn-lg:hover { background: var(--blue); color: #fff; }
+
+.ticket-divider {
+  position: relative;
+  width: 0;
+  border-left: 2px dashed rgba(240,244,248,0.22);
+  margin: 18px 0;
+}
+.ticket-divider::before, .ticket-divider::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22px;
+  height: 22px;
+  background: var(--navy);
+  border-radius: 50%;
+}
+.ticket-divider::before { top: -30px; }
+.ticket-divider::after  { bottom: -30px; }
+
+.ticket-side {
+  width: 108px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+}
+.ticket-pct { font-family: 'DM Serif Display', serif; font-size: 2.1rem; color: var(--blue); line-height: 1; }
+.ticket-off { font-size: 11px; font-weight: 700; color: var(--gray); letter-spacing: 0.14em; margin-top: 4px; }
+
+@media (max-width: 480px) {
+  .ticket { flex-direction: column; }
+  .ticket-divider { display: none; }
+  .ticket-side { width: auto; flex-direction: row; gap: 8px; padding: 4px 24px 22px; }
+}
+
+/* ---------- CTA button ---------- */
+.cta-btn {
+  display: inline-block;
+  background: var(--blue);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 8px 24px rgba(42,111,201,0.35);
+}
+.cta-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(42,111,201,0.45); }
+
+/* ---------- steps ---------- */
+.steps { max-width: 880px; margin: 0 auto; padding: 40px 32px 64px; }
+.section-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.steps h2, .faq h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.step-card {
+  background: var(--navy-panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 22px;
+}
+.step-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  color: var(--blue);
+  display: block;
+  margin-bottom: 10px;
+}
+.step-title { font-weight: 600; font-size: 15px; margin-bottom: 6px; }
+.step-text { font-size: 13.5px; color: var(--gray); line-height: 1.6; }
+
+@media (max-width: 640px) {
+  .steps-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- FAQ ---------- */
+.faq { max-width: 720px; margin: 0 auto; padding: 20px 32px 80px; }
+.faq-item {
+  background: var(--navy-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.faq-q {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+.faq-chevron { margin-left: auto; color: var(--gray); font-size: 18px; transition: transform 0.2s; }
+.faq-item.open .faq-chevron { transform: rotate(180deg); }
+.faq-a {
+  display: none;
+  padding: 0 20px 18px;
+  font-size: 13.5px;
+  color: var(--gray);
+  line-height: 1.7;
+}
+.faq-item.open .faq-a { display: block; }
+
+/* ---------- final CTA ---------- */
+.final-cta {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 20px 32px 90px;
+}
+.final-cta h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.7rem;
+  margin-bottom: 14px;
+}
+.final-cta p { color: var(--gray); font-size: 14.5px; margin-bottom: 30px; }
+
+/* ---------- footer ---------- */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 48px;
+  text-align: center;
+}
+footer p { font-size: 12.5px; color: var(--gray); }
+footer a { color: var(--blue); text-decoration: none; font-weight: 600; }
+.footer-note { margin-top: 6px; font-size: 11.5px; color: rgba(138,154,184,0.6); }
+
+@media (max-width: 700px) {
+  .header, .hero, .steps, .faq, .final-cta, footer { padding-left: 20px; padding-right: 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a class="brand" href="index.html" style="text-decoration:none">dr<span>matheus</span>10</a>
+  <div class="header-tag">Estratégia MED</div>
+</div>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow">Cupom oficial · @drmatheus10</p>
+    <h1>Como usar seu<br>desconto no <em>Estratégia MED</em></h1>
+    <p class="hero-sub">Leva menos de 1 minuto. Copie o código, cole no carrinho e garanta 10% off no seu curso de Residência ou Revalida.</p>
+
+    <div class="ticket">
+      <div class="ticket-main">
+        <span class="ticket-label">Cupom de desconto</span>
+        <div class="ticket-code-row">
+          <span class="ticket-code" id="couponCode">DRMATHEUS10</span>
+          <button class="copy-btn-lg" id="copyBtn">Copiar código</button>
+        </div>
+      </div>
+      <div class="ticket-divider"></div>
+      <div class="ticket-side">
+        <span class="ticket-pct">10%</span>
+        <span class="ticket-off">OFF</span>
+      </div>
+    </div>
+
+    <a href="https://med.estrategia.com" class="cta-btn" target="_blank" rel="noopener">Usar cupom no Estratégia MED →</a>
+  </section>
+
+  <section class="steps">
+    <p class="section-eyebrow">Passo a passo</p>
+    <h2>4 passos para aplicar o cupom</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-num">01</span>
+        <div class="step-title">Acesse o site</div>
+        <div class="step-text">Clique no botão acima ou no link da bio do @drmatheus10 para entrar no site do Estratégia MED.</div>
+      </div>
+      <div class="step-card">
+        <span class="step-num">02</span>
+        <div class="step-title">Escolha seu curso</div>
+        <div class="step-text">Selecione o plano certo pro seu momento: Extensivo, Intensivo, Renovação ou o banco de questões BQMED.</div>
+      </div>
+      <div class="step-card">
+        <span class="step-num">03</span>
+        <div class="step-title">Encontre o campo do cupom</div>
+        <div class="step-text">No carrinho, antes de fechar o pagamento, procure o campo "Cupom de desconto" ou "Código promocional".</div>
+      </div>
+      <div class="step-card">
+        <span class="step-num">04</span>
+        <div class="step-title">Aplique e confirme</div>
+        <div class="step-text">Cole DRMATHEUS10, clique em aplicar — o valor com 10% off aparece na hora. Só finalizar a compra.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <p class="section-eyebrow">Dúvidas comuns</p>
+    <h2>Perguntas frequentes</h2>
+    <div id="faqList">
+      <div class="faq-item">
+        <div class="faq-q"><span>Para quais cursos vale o cupom?</span><span class="faq-chevron">⌄</span></div>
+        <div class="faq-a">O DRMATHEUS10 vale para os cursos do Estratégia MED — Extensivo, Intensivo, Renovação — e também para o banco de questões BQMED.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>O cupom tem prazo de validade?</span><span class="faq-chevron">⌄</span></div>
+        <div class="faq-a">O código é de uso contínuo. O valor exato do desconto pode variar conforme as condições vigentes da plataforma no momento da compra, então vale sempre conferir o total antes de fechar.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Posso usar junto com outras promoções da Estratégia MED?</span><span class="faq-chevron">⌄</span></div>
+        <div class="faq-a">Depende da campanha ativa no momento. Na dúvida, insira o código no carrinho — se ele puder ser aplicado, o desconto aparece automaticamente no valor total.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Onde exatamente eu insiro o código?</span><span class="faq-chevron">⌄</span></div>
+        <div class="faq-a">Na tela do carrinho ou checkout, antes de escolher a forma de pagamento, tem um campo específico para cupom. Cole DRMATHEUS10 ali e clique em "Aplicar".</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>O desconto aparece na hora?</span><span class="faq-chevron">⌄</span></div>
+        <div class="faq-a">Sim. Assim que o cupom é aplicado, o valor total do pedido é atualizado automaticamente com os 10% de desconto.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <h2>Pronto pra estudar com desconto?</h2>
+    <p>Garanta seus 10% off agora e comece — ou continue — sua preparação para Residência Médica ou Revalida com o Estratégia MED.</p>
+    <a href="https://med.estrategia.com" class="cta-btn" target="_blank" rel="noopener">Usar cupom agora →</a>
+  </section>
+</main>
+
+<footer>
+  <p><a href="https://www.instagram.com/drmatheus10" target="_blank" rel="noopener">@drmatheus10</a> · Conteúdo para Residência Médica & Revalida</p>
+  <p class="footer-note">Cupom sujeito às condições vigentes da plataforma Estratégia MED.</p>
+</footer>
+
+<script>
+document.getElementById('copyBtn').addEventListener('click', function () {
+  const code = document.getElementById('couponCode').textContent.trim();
+  navigator.clipboard.writeText(code).then(() => {
+    this.textContent = 'Copiado ✓';
+    this.style.background = '#2a6fc9';
+    this.style.color = '#fff';
+    setTimeout(() => {
+      this.textContent = 'Copiar código';
+      this.style.background = '';
+      this.style.color = '';
+    }, 2000);
+  });
+});
+
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelector('.faq-q').addEventListener('click', () => {
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
